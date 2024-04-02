@@ -1,0 +1,51 @@
+/* aboutSection.css */
+
+/* Mobile-first styles */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    padding: 0 20px;
+    /* Add some padding for mobile devices */
+    text-align: center;
+}
+
+.custom-badge {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .content {
+        width: 50%;
+        padding: 0 40px;
+        /* Increase padding for larger screens */
+        text-align: left;
+    }
+}
