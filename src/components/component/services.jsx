@@ -4,9 +4,11 @@ import { NavBar } from "./navbar";
 import { hourglass } from "ldrs";
 import { Transition } from "@headlessui/react";
 
-hourglass.register();
+
 
 export function Services() {
+
+  hourglass.register();
   const [expandedItems, setExpandedItems] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 

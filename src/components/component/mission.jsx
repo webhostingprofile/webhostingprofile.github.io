@@ -5,11 +5,12 @@ import { NavBar } from "./navbar";
 import { useState, useEffect } from "react";
 import { quantum, ripples } from 'ldrs'
 
-quantum.register()
-ripples.register();
+
 
 export function Mission() {
 
+//   quantum.register()
+// ripples.register();
   const [pinkShade, setPinkShade] = useState("#D19DC1");
 
   // Function to generate a random shade of pink within the specified range

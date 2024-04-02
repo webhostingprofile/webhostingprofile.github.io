@@ -2,14 +2,17 @@
 
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react";
-import { quantum, ripples } from 'ldrs'
+// import { quantum, ripples } from 'ldrs'
+import 'ldrs/quantum'
+import 'ldrs/ripples'
 
-quantum.register()
-ripples.register();
+
 
 export function Footer() {
+//   quantum.register('quantum')
+// ripples.register('ripples');
 
-    const [pinkShade, setPinkShade] = useState("#D19DC1");
+  const [pinkShade, setPinkShade] = useState("#D19DC1");
 
     // Function to generate a random shade of pink within the specified range
     const generateRandomPink = () => {
