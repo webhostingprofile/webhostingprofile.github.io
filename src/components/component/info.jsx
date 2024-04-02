@@ -9,8 +9,8 @@ import { quantum, ripples } from 'ldrs'
 
 export function Info() {
 
-  quantum.register()
-ripples.register();
+//   quantum.register()
+// ripples.register();
   const [pinkShade, setPinkShade] = useState("#D19DC1");
 
   // Function to generate a random shade of pink within the specified range

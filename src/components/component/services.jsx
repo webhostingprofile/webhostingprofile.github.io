@@ -8,7 +8,7 @@ import { Transition } from "@headlessui/react";
 
 export function Services() {
 
-  hourglass.register();
+  // hourglass.register();
   const [expandedItems, setExpandedItems] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 
