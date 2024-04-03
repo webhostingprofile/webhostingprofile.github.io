@@ -59,7 +59,7 @@ export function Services() {
             </div>
             <h2 className="text-4xl font-bold" style={{color: '#414141'}}>Services On Offer</h2>
             <p className="text-gray-600">
-              Our team at Creatr is dedicated to empowering your OnlyFans journey with expertise, innovation, and a deep
+              Our team at Excite is dedicated to empowering your OnlyFans journey with expertise, innovation, and a deep
               understanding of your unique brand. Together, we focus on maximising your potential and bringing your
               creative vision to life.
             </p>
