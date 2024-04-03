@@ -58,43 +58,43 @@ export function Footer() {
             />
           </header>
           <main className="flex flex-col items-center text-center space-y-8 w-full">
-            <div style={{ position: "relative", zIndex: 1 }}>
-              <l-ripples
-                size="150"
-                speed="2"
-                color="white"
-                style={{ position: "absolute", top: 0, left: '-10%', right: 0, bottom: 0, zIndex: 0 }}
-              ></l-ripples>
-              <l-ripples
-                size="150"
-                speed="2"
-                color="black"
-                style={{ position: "absolute", top: 10, left: '-9%', right: 0, bottom: 0, zIndex: 0 }}
-              ></l-ripples>
-              <l-ripples
-                size="150"
-                speed="2"
-                color="white"
-                style={{ position: "absolute", top: 0, left: '91%', right: 0, bottom: 0, zIndex: 0 }}
-              ></l-ripples>
-              <l-ripples
-                size="150"
-                speed="2"
-                color="black"
-                style={{ position: "absolute", top: 10, left: '90%', right: 0, bottom: 0, zIndex: 0 }}
-              ></l-ripples>
-              <div style={{ position: "relative", zIndex: 1 }}>
-                <h1 className="text-8xl text-yellow-300">
-                  UNLOCK YOUR
-                </h1>
-                <h1 className="text-8xl font-bold text-yellow-300" style={{ fontSize: "8rem" }}>
-                  POTENTIAL
-                </h1>
-                <h1 className="text-8xl text-yellow-300">
-                  WITH <span className="font-bold text-8xl" style={{ fontSize: '8rem' }}>EXCITE</span>
-                </h1>
-              </div>
-            </div>
+         <div className="w-full" style={{ zIndex: 1, overflow: 'hidden' }}>
+  <l-ripples
+    size="150"
+    speed="2"
+    color="white"
+    style={{ position: "absolute", top: 0, left: '-10%', right: 0, bottom: 0, zIndex: 0 }}
+  ></l-ripples>
+  <l-ripples
+    size="150"
+    speed="2"
+    color="black"
+    style={{ position: "absolute", top: 10, left: '-9%', right: 0, bottom: 0, zIndex: 0 }}
+  ></l-ripples>
+  <l-ripples
+    size="150"
+    speed="2"
+    color="white"
+    style={{ position: "absolute", top: 0, left: '91%', right: 0, bottom: 0, zIndex: 0 }}
+  ></l-ripples>
+  <l-ripples
+    size="150"
+    speed="2"
+    color="black"
+    style={{ position: "absolute", top: 10, left: '90%', right: 0, bottom: 0, zIndex: 0 }}
+  ></l-ripples>
+  <div className="w-full" style={{ zIndex: 1 }}>
+    <h1 className="text-8xl text-yellow-300">
+      UNLOCK YOUR
+    </h1>
+    <h1 className="text-6xl md:text-8xl font-bold text-yellow-300" style={{ fontSize: "calc(4rem + 2vw)" }}>
+      POTENTIAL
+    </h1>
+    <h1 className="text-8xl text-yellow-300">
+      WITH <span className="font-bold text-6xl md:text-8xl" style={{ fontSize: 'calc(4rem + 2vw)' }}>EXCITE</span>
+    </h1>
+  </div>
+</div>
             <div style={{ position: "relative", zIndex: 1 }}>
               <div className="flex items-center">
                 <l-quantum
