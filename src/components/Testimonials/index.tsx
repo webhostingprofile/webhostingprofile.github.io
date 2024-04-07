@@ -6,16 +6,16 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "",
-    designation: "Content Creator",
+    designation: "Emily Johnson",
     content:
-      "I've been working with Strive Now, around 3 weeks now. But I'm so glad with how things have gone so far! There are always ideas for new content, which has made my account explode with subs!",
+      "I've been working with Excite Management, around 3 weeks now. But I'm so glad with how things have gone so far! There are always ideas for new content, which has made my account explode with subs!",
     image: "/images/testimonials/TestimonialOne.png",
     star: 5,
   },
   {
     id: 2,
     name: "",
-    designation: "Content Creator",
+    designation: "Sophia Martinez",
     content:
       "Excite Management has helped me out dramatically! From starting my OnlyFans career to making me 5 figures consecutive months, meaning I can quit my job! I couldn't thank them enough for what they've done for me x",
     image: "/images/testimonials/TestimonialTwo.png",
@@ -24,7 +24,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 3,
     name: "",
-    designation: "Cotent Creator",
+    designation: "Olivia Anderson",
     content:
       "Excite Managemnet has done bits for me. I've been struggling what to say and post for a long time, until I came across them! The support and motivation I get is unbelievable. Couldn't recommend them enough",
     image: "/images/testimonials/TestimonialFive.png",
