@@ -32,6 +32,23 @@
   }
 }
 
+@media (max-width: 768px) {
+  #home {
+    background-size: contain !important;
+    background-position: center !important;
+  }
+}
+
+/* Define the layout for smaller screens */
+@media (max-width: 768px) {
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+  }
+}
 .site-button {
   background-color: white;
   color: rgb(245, 112, 223);
@@ -104,6 +121,22 @@
   overflow: hidden;
   /* Ensure contents remain within the overlay */
   padding: 1rem;
+}
+
+/* Adjust the overlay position for smaller screens 
+ made size just for resizing the screen
+*/
+@media (max-width: 1068px) { 
+  .overlay {
+    width: 100%;
+    /* Full width */
+    height: 80%;
+    /* Half height */
+    top: 50%;
+    /* Align to the middle vertically */
+    transform: translateY(-70%);
+    /* Adjust position */
+  }
 }
 
 .title {
