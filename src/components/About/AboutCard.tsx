@@ -1,6 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 
 const ImageBackgroundComponent = ({ title, text, buttonText }) => {
+  // Define the destination URL here
+  const destination = '/services'; // Replace '/your-destination-url' with the actual URL
+
   return (
     <div className="image-background">
       <div className="overlay">
@@ -10,7 +14,9 @@ const ImageBackgroundComponent = ({ title, text, buttonText }) => {
           </div>
           <div className="body">
             <p className="text">{text}</p>
-            <button className="button">{buttonText}</button>
+            <Link className="button" href={destination}>
+              {buttonText}
+            </Link>
           </div>
         </div>
       </div>

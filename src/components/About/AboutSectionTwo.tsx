@@ -11,9 +11,9 @@ const AboutSectionTwo = () => {
 
   return (
     <section className="py-16 md:py-20 lg:py-28 " style={{
-                backgroundImage: "url('/images/girlImage5.png')",
+                backgroundImage: "url('/images/girlImage4.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+         
     }}>
       <div className="container">
           <ImageBackgroundComponent title={componentTitle} text={componentText} buttonText={componentButton} />
