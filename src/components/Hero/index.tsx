@@ -32,7 +32,7 @@ const Hero = () => {
             layout="fill" // Fill the container
             objectFit="cover" // Maintain aspect ratio and cover container
             quality={100} // Image quality
-            priority // Load image immediately
+            priority 
           />
         </div>
         <div className="container relative z-10"> {/* Set z-index to higher value than the background image */}
