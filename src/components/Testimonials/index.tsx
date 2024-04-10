@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "",
     designation: "Emily Johnson",
     content:
-      "I've been working with Excite Management, around 3 weeks now. But I'm so glad with how things have gone so far! There are always ideas for new content, which has made my account explode with subs!",
+      "I've been working with Excite Management for 3 weeks now and I'm so glad with how things have gone so far! There are always ideas for new content which has made my account explode with subs! I've now quit my job and spend my days doing what I want to do!",
     image: "/images/testimonials/TestimonialOne.png",
     star: 5,
   },
