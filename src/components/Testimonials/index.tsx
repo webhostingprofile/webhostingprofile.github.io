@@ -34,6 +34,34 @@ const Testimonials = () => {
       image: "/images/testimonials/TestimonialFive.png",
       star: 5,
     },
+      {
+    id: 4,
+    name: "",
+    designation: "Emma Thompson",
+    content:
+      "Working with Excite Management has been a game-changer for me! Their guidance and expertise have propelled my online presence to new heights. I've seen a significant increase in engagement and revenue since partnering with them. Highly recommended!",
+    image: "/images/testimonials/TestimonialFour.png",
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "",
+    designation: "David Miller",
+    content:
+      "I can't thank Excite Management enough for their invaluable support! With their strategic approach and constant encouragement, I've witnessed exponential growth in my online platform. It's truly been a pleasure collaborating with such a dedicated team!",
+    image: "/images/testimonials/TestimonialThree.png",
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "",
+    designation: "Isabella Garcia",
+    content:
+      "I was hesitant at first, but partnering with Excite Management was the best decision I made for my online career! Their personalized approach and attention to detail have transformed my content strategy. Thanks to them, I've achieved milestones I never thought possible!",
+    image: "/images/testimonials/TestimonialSixCircle.jpg",
+    star: 5,
+  },
+
   ];
 
 
