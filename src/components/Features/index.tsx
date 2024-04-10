@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28" style={{ boxShadow: "20px 20px 20px rgba(255, 255, 255, 0.5)" }}>
+      <section id="features" className="py-24 md:py-20 lg:py-28" style={{ boxShadow: "20px 20px 20px rgba(255, 255, 255, 0.5)" }}>
         <div className="container">
           <SectionTitle
             title="OnlyFans Growth"
