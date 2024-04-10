@@ -27,7 +27,7 @@ const Hero = () => {
         {/* Background Image */}
         <div className="absolute inset-0 w-full z-0"> {/* Set z-index to 0 */}
           <Image
-            src={isMobile ? "/images/girlImagemobile.jpg" : "/images/girlDesktopImage.jpg"}
+            src={isMobile ? "/images/girlImagemobile.jpg" : "/images/girlImageDesktop2.jpg"}
             alt="Background Image"
             layout="fill" // Fill the container
             objectFit="cover" // Maintain aspect ratio and cover container
