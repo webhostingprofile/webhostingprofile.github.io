@@ -1,54 +1,75 @@
+'use client';
+import React, { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
-
-const testimonialData: Testimonial[] = [
-  {
-    id: 1,
-    name: "",
-    designation: "Emily Johnson",
-    content:
-      "I've been working with Excite Management for 3 weeks now and I'm so glad with how things have gone so far! There are always ideas for new content which has made my account explode with subs! I've now quit my job and spend my days doing what I want to do!",
-    image: "/images/testimonials/TestimonialOne.png",
-    star: 5,
-  },
-  {
-    id: 2,
-    name: "",
-    designation: "Sophia Martinez",
-    content:
-      "Excite Management has helped me out dramatically! From starting my OnlyFans career to making me 5 figures consecutive months, meaning I can quit my job! I couldn't thank them enough for what they've done for me x",
-    image: "/images/testimonials/TestimonialTwo.png",
-    star: 5,
-  },
-  {
-    id: 3,
-    name: "",
-    designation: "Olivia Anderson",
-    content:
-      "Excite Managemnet has done bits for me. I've been struggling what to say and post for a long time, until I came across them! The support and motivation I get is unbelievable. Couldn't recommend them enough",
-    image: "/images/testimonials/TestimonialFive.png",
-    star: 5,
-  },
-];
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const Testimonials = () => {
+  const testimonialData: Testimonial[] = [
+    {
+      id: 1,
+      name: "",
+      designation: "Emily Johnson",
+      content:
+        "I've been working with Excite Management for 3 weeks now and I'm so glad with how things have gone so far! There are always ideas for new content which has made my account explode with subs! I've now quit my job and spend my days doing what I want to do!",
+      image: "/images/testimonials/TestimonialOne.png",
+      star: 5,
+    },
+    {
+      id: 2,
+      name: "",
+      designation: "Sophia Martinez",
+      content:
+        "Excite Management has helped me out dramatically! From starting my OnlyFans career to making me 5 figures consecutive months, meaning I can quit my job and do something I enjoy! I couldn't thank them enough for what they have done for me while working together x",
+      image: "/images/testimonials/TestimonialTwo.png",
+      star: 5,
+    },
+    {
+      id: 3,
+      name: "",
+      designation: "Olivia Anderson",
+      content:
+        "Excite Managemnet has done a lot for me in my content creation journey. I've been struggling what to say to my subscribers and what to post for a long time, until I came across them! The support and motivation I get is unbelievable. Couldn't recommend them enough",
+      image: "/images/testimonials/TestimonialFive.png",
+      star: 5,
+    },
+  ];
+
+
+
+  const labels = {
+    leftArrow: 'Previous testimonial',
+    rightArrow: 'Next testimonial',
+    item: 'Testimonial'
+  };
+
+
   return (
     <section className="dark:bg-pink bg-gray-light relative z-10 py-16 md:py-20 lg:py-28" 
   style={ {boxShadow: "20px 20px 20px rgba(255, 255, 255, 0.5)",}}
     >
-      <div className="container">
+      <div className="container" style={{justifyContent: 'center', alignItems: 'center'}}>
         <SectionTitle
           title="What Our Clients Say"
           paragraph=""
           center
         />
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+       <Carousel 
+        showArrows={true} 
+        showThumbs={false}
+        autoPlay={true}
+        emulateTouch={true}
+        infiniteLoop={true}
+        interval={5000}
+        showIndicators={true}
+        labels={labels}
+        >
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
-        </div>
+        </Carousel>
+        
       </div>
       <hr className="border-b-1 border-gray-300 w-4/5 mx-auto mt-8 my-8" />
       <div className="absolute right-0 top-5 z-[-1]">

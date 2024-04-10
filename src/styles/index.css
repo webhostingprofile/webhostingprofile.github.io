@@ -92,6 +92,17 @@
 .single-feature:hover {
   transform: scale(1.1);
 }
+
+.carousel .control-dots .dot {
+  border-radius:  20% !important;
+  width: 20px !important;
+  height: 4px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: black !important;
+}
+
+
 .image-background {
   position: relative;
   width: 100%;
