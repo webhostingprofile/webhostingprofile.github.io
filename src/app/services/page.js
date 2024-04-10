@@ -6,7 +6,7 @@ import Features from "@/components/Features";
 const ServicesPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Services Page" description="" />
+      <Breadcrumb pageName="" description="" />
       <AboutSectionOne />
     </>
   );
