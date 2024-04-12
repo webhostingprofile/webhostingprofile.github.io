@@ -91,7 +91,7 @@ const Testimonials = () => {
         infiniteLoop={true}
         interval={5000}
         showIndicators={true}
-        labels={labels}
+        showStatus={false}
         >
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
