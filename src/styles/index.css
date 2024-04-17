@@ -128,6 +128,15 @@
   }
 }
 
+.follow-instagram {
+  transition: transform 0.3s ease-in-out;
+}
+
+.follow-instagram:hover {
+  transform: scale(1.1);
+  /* Increase scale on hover */
+}
+
 .overlay {
   position: absolute;
   top: 0;

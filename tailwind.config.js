@@ -41,6 +41,7 @@ module.exports = {
         yellow: "#F3BE05",
         // black: "#121723",
         black: "#EB75A6",
+        darkblack: "#000000",
         dark: "#1D2430",
         // dark: "#F846DA",
         // pink: "#F846DA",
