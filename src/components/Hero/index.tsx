@@ -31,7 +31,7 @@ const Hero = () => {
             alt="Background Image"
             layout="fill" // Fill the container
             objectFit="cover" // Maintain aspect ratio and cover container
-            quality={100} // Image quality
+            quality={101} // Image quality
             priority 
           />
         </div>
