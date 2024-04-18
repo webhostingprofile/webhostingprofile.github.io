@@ -23,7 +23,7 @@ export default function RootLayout({
         {/* End of favicon */}
       </head>
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] bg-white ${inter.className}`}>
         <Providers>
           <Header />
           {children}
