@@ -56,7 +56,7 @@ const AboutSectionThree = () => {
               <div className={`${isMobile ? '' : 'w-1/2 mr-4  flex justify-center items-center mt-4'}`}>
                 <p className="text-lg text-left leading-normal" style={{ color: 'black' }}>
                   Introducing EXCITE – your dedicated partner in navigating the dynamic world of OnlyFans. With a powerhouse team of over 120 skilled professionals, we pride ourselves on delivering top-notch support to both established stars and rising talents. At EXCITE, our mission is crystal clear: to empower creators and models to reach new heights of success.<br/><br/>
-                  Driven by a passion for excellence, we approach every aspect of our work with professionalism and a sharp business mindset. Whether you're a seasoned pro or just starting out, EXCITE is here to ensure your journey on OnlyFans is nothing short of remarkable.
+                  Driven by a passion for excellence, we approach every aspect of our work with professionalism and a sharp business mindset. Whether you are a seasoned pro or just starting out, EXCITE is here to ensure your journey on OnlyFans is nothing short of remarkable.
                 </p>
               </div>
             </div>
