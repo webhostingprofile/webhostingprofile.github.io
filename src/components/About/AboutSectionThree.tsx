@@ -43,7 +43,7 @@ const AboutSectionThree = () => {
 
       {/* Text and images section */}
       <section className="py-2 bg-white">
-        <div className="container flex justify-center items-center flex-wrap">
+        <div className="container flex justify-center items-center flex-wrap mt-4">
           {/* Content */}
           <div className="text-center w-full">
             {/* Text parts */}
@@ -63,42 +63,42 @@ const AboutSectionThree = () => {
             {/* Images */}
             <div className="flex justify-center flex-wrap mb-8">
               {/* Image 1 */}
-              {/* <div className="mx-2 my-2" style={{height: '400px', width: '200px'}}>
+              {/* <div className="mx-2 my-2 mb-4" style={{height: '400px', width: '200px'}}>
                 <Image src="/images/insta/insta8.jpg" alt="Image 1" width={200} height={100} objectFit="cover" />
               </div> */}
 
               {/* Image 2 */}
-              <div className="mx-2" style={{height: '300px', width: '200px'}}>
+              <div className="mx-2 mb-4" style={{height: '300px', width: '200px'}}>
                 <Image src="/images/insta/insta2.jpg" alt="Image 2" width={200} height={100} objectFit="cover" />
               </div>
 
               {/* Image 3 */}
-              <div className="mx-2" style={{height: '300px', width: '200px'}}>
+              <div className="mx-2 mb-4" style={{height: '300px', width: '200px'}}>
                 <Image src="/images/insta/insta3.jpg" alt="Image 3" width={200} height={100} objectFit="cover" />
               </div>
               
               {/* Image 4 */}
-              <div className="mx-2" style={{height: '300px', width: '200px'}}>
+              <div className="mx-2 mb-4" style={{height: '300px', width: '200px'}}>
                 <Image src="/images/insta/insta4.jpg" alt="Image 4" width={200} height={100} objectFit="cover" />
               </div>
               
               {/* Image 5 */}
-              {/* <div className="mx-2" style={{height: '400px', width: '200px'}}>
+              {/* <div className="mx-2 mb-4" style={{height: '400px', width: '200px'}}>
                 <Image src="/images/insta/insta5.jpg" alt="Image 5" width={200} height={100} objectFit="cover" />
               </div> */}
               
               {/* Image 6 */}
-              <div className="mx-2"style={{height: '300px', width: '200px'}}>
+              <div className="mx-2 mb-4"style={{height: '300px', width: '200px'}}>
                 <Image src="/images/insta/insta6v1.jpg" alt="Image 6" width={200} height={100} objectFit="cover" />
               </div>
             </div>
 
             {/* Buttons */}
             <div className="flex justify-center mb-4 mt-4">
-              <a href="https://www.instagram.com/exciteofm" target="_blank" rel="noopener noreferrer" className="follow-instagram bg-black text-white py-2 px-4 mr-4 flex items-center">
-  <span>Follow On Instagram</span>
-  <FaInstagram className="ml-2" />
-</a>
+              <a href="https://www.instagram.com/exciteofm" target="_blank" rel="noopener noreferrer" className="rounded-md follow-instagram bg-black text-white py-2 px-4 mr-4 flex items-center">
+                <span>Follow On Instagram</span>
+                <FaInstagram className="ml-2" />
+              </a>
               {/* <button className="bg-blue-500 text-white py-2 px-4">Button 2</button> */}
             </div>
           </div>
