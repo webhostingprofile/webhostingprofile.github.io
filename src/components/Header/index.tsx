@@ -116,8 +116,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-darkblack"
-                                : "text-dark hover:text-primary dark:text-darkblack/70 dark:hover:text-darkblack"
+                                ? "text-primary dark:text-black"
+                                : "text-dark hover:text-primary dark:text-black/80 dark:hover:text-darkblack"
                             }`}
                           >
                             {menuItem.title}

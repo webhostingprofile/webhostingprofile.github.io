@@ -22,7 +22,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="overflow-hidden bg-white mb-56 pb-40 pt-[120px] dark:bg-white md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="bg-white  pb-40 pt-[120px] dark:bg-white md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         {/* Background Image */}
         <div className="absolute inset-0 w-full z-0"> {/* Set z-index to 0 */}
