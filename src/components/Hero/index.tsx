@@ -23,6 +23,7 @@ const Hero = () => {
       <section
         id="home"
         className="bg-white  pb-40 pt-[120px] dark:bg-white md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        style={{height: isMobile ? "auto" : '100vh'}}
       >
         {/* Background Image */}
         <div className="absolute inset-0 w-full z-0"> {/* Set z-index to 0 */}
