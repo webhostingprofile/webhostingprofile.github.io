@@ -51,7 +51,9 @@ const AboutSectionOne = () => {
   const paddingBottomValue = isLargeScreen ? "40px" : "16px"; // Adjust as needed
 
   return (
-    <section id="about" className={`pt-8 mt-5 md:pt-20 lg:pt-28 bg-white ${isLargeScreen ? 'pb-40' : ''}`}>
+    <section id="about" className={`pt-8 mt-5 md:pt-20 lg:pt-28 bg-white ${isLargeScreen ? 'pb-40' : ''}`}
+     
+    >
       <div className="container pt-8 mt-5">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">

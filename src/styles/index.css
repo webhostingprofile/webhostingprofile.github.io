@@ -111,6 +111,18 @@
   }
 }
 
+.divider {
+  width: 4px;
+  /* Adjust the width as needed */
+  height: 24px;
+  /* Adjust the height as needed */
+  background-color: #000;
+  /* Adjust the color as needed */
+  margin-right: -20px;
+  margin-left: 20px;
+  /* Adjust the margin as needed */
+}
+
 .carousel .control-dots .dot {
   border-radius:  20% !important;
   width: 20px !important;

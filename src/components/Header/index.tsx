@@ -112,16 +112,19 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          <Link
-                            href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-primary dark:text-darkblack"
-                                : "text-dark hover:text-primary dark:text-darkblack/80 dark:hover:text-darkblack"
-                            }`}
-                          >
-                            {menuItem.title}
-                          </Link>
+                <Link
+                  href={menuItem.path}
+                  className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                    usePathName === menuItem.path
+                      ? "text-primary dark:text-darkblack dark:hover:text-black"
+                      : "text-dark hover:text-primary dark:text-darkblack/80 dark:hover:text-black"
+                  }`}
+                >
+                  <>
+                    {menuItem.title}
+                    {index < menuData.length - 1 && <p className="divider">|</p>}
+                  </>
+                </Link>
                         ) : (
                           <>
                             <p

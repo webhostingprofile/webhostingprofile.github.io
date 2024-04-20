@@ -45,7 +45,7 @@ module.exports = {
         dark: "#1D2430",
         // dark: "#F846DA",
         // pink: "#F846DA",
-        pink: "#FC8AD7",
+        pink: "#FFB6C1",
         primary: "#4A6CF7",
         // yellow: "#FBB040",
         "bg-color-dark": "#171C28",
