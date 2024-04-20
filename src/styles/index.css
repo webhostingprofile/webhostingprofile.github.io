@@ -95,6 +95,22 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 767px) {
+  .single-feature {
+    width: 100%;
+    /* Set width to 100% for small screens */
+    margin-bottom: 20px;
+    /* Add margin between features for better spacing */
+  }
+}
+
+@media (max-width: 767px) {
+  .mb-mobile {
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+  }
+}
+
 .carousel .control-dots .dot {
   border-radius:  20% !important;
   width: 20px !important;

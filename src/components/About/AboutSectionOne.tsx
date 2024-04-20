@@ -1,5 +1,8 @@
+'use client';
+import { useEffect, useState } from 'react';
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-black">
@@ -17,42 +20,53 @@ const AboutSectionOne = () => {
     </p>
   );
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  const checkIsMobile = () => {
+    setIsMobile(window.innerWidth <= 768);
+  }
+
+  useEffect(() => {
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
+
+  const marginValue = isMobile ? "180px" : "44px";
+  const marginBottomValue = isMobile ? "-120px" : "44px";
+
   return (
     <section id="about" className="pt-8 mt-5 md:pt-20 lg:pt-28 bg-white">
       <div className="container pt-8 mt-5">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2" style={{color: 'black'}}>
-              <SectionTitle
-                title="Our Services"
-                paragraph="Our team at Excite is dedicated to empowering your OnlyFans journey with expertise, innovation, and a deep
-              understanding of your unique brand. Together, we focus on maximising your potential and bringing your
-              creative vision to life."
-                mb="44px"
-              />
+<div className="w-full px-4 lg:w-1/2" style={{color: 'black'}}>
+  <SectionTitle
+    title="Our Services"
+    paragraph="Our team at Excite is dedicated to empowering your OnlyFans journey with expertise, innovation, and a deep understanding of your unique brand. Together, we focus on maximising your potential and bringing your creative vision to life."
+    mb="44px"
+    mt={marginValue}
+    mbValue={marginBottomValue}
+  />
 
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2 single-feature">
-                    <List text="Customised Content Strategy and Planning" />
-                    <List text="Promotion and Marketing for Creator" />
-                    
-                  
-                  </div>
+  <div className="mb-12 max-w-[570px] lg:mb-0">
+    <div className="mx-[-12px] flex flex-wrap">
+      <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2 single-feature">
+        <List text="Customised Content Strategy and Planning" />
+        <List text="Promotion and Marketing for Creator" />
+      </div>
 
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2 single-feature">
-                    <List text="Audience Engagement and Boosting Accounts" />
-                    <List text="Financial Management and Guidance" />
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2 single-feature">
+        <List text="Audience Engagement and Boosting Accounts" />
+        <List text="Financial Management and Guidance" />
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div className="w-full px-4 lg:w-1/2">
+
+            <div className="w-full px-4 lg:mt-20 lg:pt-10 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
                   src="/images/about/about-image.svg"
