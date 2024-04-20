@@ -48,7 +48,7 @@ const Header = () => {
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            : "absolute bg-white/80"
         }`}
       >
         <div className="container relative ">
@@ -116,8 +116,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-black"
-                                : "text-dark hover:text-primary dark:text-black/80 dark:hover:text-darkblack"
+                                ? "text-primary dark:text-darkblack"
+                                : "text-dark hover:text-primary dark:text-darkblack/80 dark:hover:text-darkblack"
                             }`}
                           >
                             {menuItem.title}
